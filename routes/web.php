@@ -16,8 +16,11 @@ use App\Http\controllers\ChatsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/',function(){
+    return view('/welcomee');
 });
 //view profile for any user
 Route::get('/profile/{user_id}',[usersController::class, 'profile'])->name('profile');
